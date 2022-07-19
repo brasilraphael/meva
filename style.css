@@ -435,7 +435,7 @@ footer .brand p {
 @media (min-width: 1200px) {
     :root {
         --fs-heading: 4rem;
-        --fs-body: 2.5rem
+        --fs-body: 1.8rem
     }
 
     #page {
@@ -659,7 +659,7 @@ footer .brand p {
     #creator .creator-wrapper p {
         text-align: end;
         align-self: flex-end;
-        font-size: var(--fs-body);
+        font-size: 1.6rem;
         line-height: 2.5rem;
     }
 
