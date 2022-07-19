@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'Poppins', sans-serif;
+    --bg-primary: #eee4e4e3;
+    --tc-primary: #002b67;
+    --tc-secondary: #00d7a0;
+
+    --fs-heading: 2.5rem;
+    --fs-body: 1.5rem;
+}
+
+body {
+    background-color: var(--bg-primary);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#page {
+    font-family: var(--ff-primary);
+    color: var(--tc-primary);
+
+    text-align: center;
+
+    max-width: 32rem;
+    margin: 2rem auto 0;
+}
+
+header img {
+    width: 11.5rem;
+}
+
+header h1 {
+    text-align: inherit;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 1.838rem;
+    margin: 2rem 0 3rem;
+}
+
+header span {
+    font-size: 2.5rem;
+}
+
+span {
+    color: var(--tc-secondary);
+}
+
+p {
+    font-size: var(--fs-body);
+}
+
+#home p {
+    text-align: start;
+}
+
+#home p span {
+    font-weight: 700;
+}
+
+#home .video {
+    margin: 3rem 0;
+    max-width: 32rem;
+    max-height: 18rem;
+    border: 3px solid var(--tc-secondary);
+    border-radius: 1rem;
+}
+
+.buy {
+    margin-top: 3rem;
+}
+
+.buy h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.buy span {
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.button {
+    text-decoration: none;
+    background: var(--tc-primary);
+    padding: 1.5rem 3rem;
+
+    color: white;
+
+    border-radius: 5rem;
+
+    font-size: 1.3rem;
+}
+
+.button:hover {
+    background: #01132c;
+}
+
+.payment-methods {
+    margin-top: 2rem;
+    width: 20rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+
+    padding: 0 2rem;
+}
+
+#market h3 {
+    text-align: start;
+
+    font-weight: 400;
+    font-size: var(--fs-heading);
+    line-height: 3rem;
+
+    width: 90%;
+
+    margin-bottom: 2rem;
+}
+
+#market p,
+#method p {
+    margin-top: 4rem;
+
+    text-align: start;
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.ideal {
+    text-align: start;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#market img {
+    width: 65%;
+}
+
+#method p {
+    margin-bottom: 1rem;
+}
+
+#method p span {
+    font-weight: 700;
+    font-size: var(--fs-heading);
+    line-height: 3rem;
+}
+
+#method .system {
+    width: 80%;
+}
+
+#ideal-client {
+    margin-top: 3rem;
+}
+
+#ideal-client p {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: var(--fs-heading);
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: start;
+}
+
+.marea img {
+    margin-top: 3rem;
+    width: 65%;
+}
+
+.search-bar {
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    border: 2px solid var(--tc-primary);
+    border-radius: 2rem;
+
+    padding: 0.5rem;
+}
+
+#ideal-client .search p {
+    text-align: end;
+    font-size: var(--fs-body);
+    line-height: 2rem;
+
+    margin-top: 3rem;
+}
+
+#ideal-client .search p span {
+    font-weight: 700;
+}
+
+#social-media h4 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+#social-media .notebook img {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    width: 65%;
+}
+
+#social-media .button {
+    margin-left: 11rem;
+}
+
+#access h4 {
+    margin-top: 5rem;
+    font-size: var(--fs-heading);
+    margin-bottom: 2rem;
+}
+
+#access .book img {
+    width: 65%;
+    margin: 0 auto;
+}
+
+#access .book {
+    display: grid;
+    gap: 2rem;
+}
+
+#access .book #access-topics .access-card {
+    width: 70%;
+}
+
+.icon-arrow-right2 {
+    color: var(--tc-secondary);
+    font-size: 2rem;
+}
+
+#knowledge .arrow-wrapper {
+    margin-top: 3rem;
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+#knowledge h4 {
+    font-size: var(--fs-heading);
+    font-weight: 700;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#client h4 {
+    color: var(--tc-secondary);
+    font-size: var(--fs-heading);
+    text-align: center;
+}
+
+#client .card-wrapper {
+    margin: 4rem auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+}
+
+#client .card-wrapper .client-type {
+    width: 65%;
+    margin: 0 auto;
+}
+
+#client .buy {
+    margin-top: 2rem;
+}
+
+#client .buy .payment-methods {
+    margin-bottom: 0;
+}
+
+#client p {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#creator h4 {
+    font-size: var(--fs-heading);
+    font-weight: 700;
+}
+
+#creator .creator-wrapper {
+    position: relative;
+}
+
+#creator .kaian {
+    margin-top: 2rem;
+    
+    height: 30rem;
+    object-fit: contain;
+}
+
+#creator .linkedin {
+    text-decoration: none;
+
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: start;
+    background-color: var(--tc-secondary);
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+
+    position: absolute;
+    bottom: 12rem;
+    right: -1rem;
+}
+
+#creator .linkedin:visited {
+    color: white;
+}
+
+#creator p {
+    font-size: var(--fs-body);
+    font-weight: 400;
+
+    text-align: start;
+
+    margin-top: 3rem;
+}
+
+footer {
+background: var(--tc-primary);
+}
+
+.footer-container {
+    max-width: 32rem;
+
+    margin: 5rem auto 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: var(--fs-heading);
+
+    padding: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer .logo img {
+    max-width: 10rem;
+}
+
+#year {
+    margin-top: 2rem;
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+footer .brand p {
+    text-align: start;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.socials {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.socials a:nth-child(3) {
+    font-size: 2.5rem;
+    margin-top: 0.2rem;
+}
+
+.divider {
+    border-top: 1px solid var(--tc-secondary);
+    width: 70%;
+    margin: 5rem auto;
+}
+
+.whatsapp {
+    color: white;
+    background: green;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    clip-path: circle();
+    padding: 1rem;
+
+    font-size: 2.5rem;
+    line-height: 0;
+
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --fs-heading: 4rem;
+        --fs-body: 2.5rem
+    }
+
+    #page {
+        max-width: 1120px;
+        padding: 0 8rem;
+    }
+
+    header h1 {
+        font-size: var(--fs-heading);
+        line-height: 4.5rem;
+    }
+
+    header span { 
+        font-size: 4.5rem;
+    }
+
+    #home .video {
+        max-width: 70rem;
+        max-height: 40rem;
+    }
+
+    .buy h2 {
+        margin-top: 0.5rem;
+        font-size: var(--fs-heading);
+        line-height: 4rem;
+    }
+
+    .buy span {
+        font-size: 4.5rem;
+    }
+
+    .button {
+        font-size: 2.7rem;
+    }
+
+    .payment-methods {
+        width: 25rem;
+    }
+
+    .card-wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 25% 25% 25% 25%;
+
+        padding: 0 3.5rem;
+    }
+
+    #market {
+        margin-top: 10rem;
+        display: flex;
+    }
+
+    #market img {
+        width: 70%;
+        margin-left: 4rem;
+    }
+    
+    #method img {
+        width: 40%;
+    }
+
+    .ideal {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #market h3 {
+        font-size: var(--fs-heading);
+        max-width: 40rem;
+        line-height: 3.5rem;
+    }
+
+    #market p {
+        font-size: var(--fs-body);
+        line-height: 2.8rem;
+        max-width: 50rem;
+    }
+
+    #method {
+        margin-top: 10rem;
+        display: flex;
+        gap: 6rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #method .system {
+        width: 35%;
+    }
+
+    #method p {
+        width: 60%;
+        font-size: var(--fs-body);
+        line-height: 2.8rem;
+    }
+
+    #ideal-client {
+        display: flex;
+        gap: 4rem;
+        justify-content: space-between;
+    }
+
+    .marea {
+        width: 45%;
+    }
+
+    .marea h4 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .search {   
+        margin-top: 9rem;
+        width: 45%;
+    }
+
+    #ideal-client .search p {
+        font-size: 2.7rem;
+        line-height: 3.5rem;
+    }
+
+    #social-media {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+    }
+
+    #social-media h4 {
+        width: 50%;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    #social-media .notebook {
+        width: 45%;
+    }
+
+    #social-media .notebook img {
+        margin-top: 0;
+    }
+
+    #social-media .button {
+        font-size: 2rem;
+    }
+
+    #access .book {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 3rem auto 0;
+    }
+
+    #access .book img {
+        margin: 0;
+        width: 50%;
+    }
+
+    #knowledge h4 {
+        font-size: 4rem;
+    }
+
+    #knowledge .arrow-wrapper {
+        justify-content: center;
+        font-size: 2rem;
+        margin-top: 5rem;
+        align-items: center;
+    }
+
+    #client {
+        margin-bottom: 8rem;
+    }
+
+    #client h4 {
+        font-size: 4rem;
+        text-align: center;
+
+        margin-top: 10rem;
+    }
+
+    #client .card-wrapper {
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12rem;
+        margin-top: 3rem;
+    }
+
+    #client .card-wrapper .client-type {
+        width: 100%;
+    }
+
+    #client p {
+        font-size: 3rem;
+    }
+
+    #client .button {
+        font-size: 2rem;
+    }
+
+    #creator h4 {
+        font-size: 3rem;
+    }
+
+    .creator-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #creator .creator-wrapper a {
+        left: 20rem;
+        bottom: 12rem;
+        width: 40%;
+        text-align: end;
+        z-index: 0;
+    }
+
+    #creator .creator-wrapper .kaian {
+        z-index: 1;
+    }
+
+    #creator .creator-wrapper p {
+        text-align: end;
+        align-self: flex-end;
+        font-size: var(--fs-body);
+        line-height: 2.5rem;
+    }
+
+    .footer-container {
+        margin: 4rem auto 0;
+        max-width: 1120px;
+    }
+
+    footer .logo img {
+        max-width: 15rem;
+    }
+
+    .divider {
+        width: 50%;
+    }
+}
